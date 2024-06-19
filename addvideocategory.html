@@ -18,34 +18,18 @@
 		content="Dasho Bootstrap admin template made using Bootstrap 5 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
 	<meta name="keywords"
 		content="admin templates, bootstrap admin templates, bootstrap 5, dashboard, dashboard templets, sass admin templets, html admin templates, responsive, bootstrap admin templates free download,premium bootstrap admin templates, Dasho, Dasho bootstrap admin template">
-	<meta name="author" content="Phoenixcoded"/>
+	<meta name="author" content="Phoenixcoded" />
 
 	<!-- Favicon icon -->
-	<link rel="icon" href="assets/images/favicon.svg" type="image/x-icon">
-	<!-- fontawesome icon -->
-	<link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome-all.min.css">
-	<!-- animation css -->
-	<link rel="stylesheet" href="assets/plugins/animation/css/animate.min.css">
-
-	<!-- notification css -->
-	<link rel="stylesheet" href="assets/plugins/notification/css/notification.min.css">
-
-	<!-- vendor css -->
-	<link rel="stylesheet" href="assets/css/style.css">
-
-	<!-- Bootstrap datetimepicker css -->
-	<link rel="stylesheet" href="assets/plugins/bootstrap-datetimepicker/css/bootstrap-datepicker3.min.css">
-
-	<style>
-		.datepicker>.datepicker-days {
-			display: block;
-		}
-
-		ol.linenums {
-			margin: 0 0 0 -8px;
-		}
-	</style>
-
+    <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome-all.min.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="assets/plugins/animation/css/animate.min.css">
+    <!-- select2 css -->
+    <link rel="stylesheet" href="assets/css/plugins/select2.min.css">
+    <!-- vendor css -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="">
@@ -829,7 +813,7 @@
 										<ul class="breadcrumb">
 											<li class="breadcrumb-item"><a href="index.html"><i
 														class="feather icon-home"></i></a></li>
-											<li class="breadcrumb-item"><a href="#!">Add Client</a></li>
+											<li class="breadcrumb-item"><a href="#!">Add Video Category</a></li>
 										</ul>
 									</div>
 								</div>
@@ -839,160 +823,27 @@
 						<!-- [ Main Content ] start -->
 						<div class="row">							
 							 <!-- [ Form Validation ] start -->
-                            <div class="col-sm-8">
+                            <div class="col-sm-6 col-xl-6">
                                 <div class="card col-xl-12 col-sm-12">
                                     <div class="card-header">
-                                        <h5>Add Client</h5>
+                                        <h5>Add Video Category</h5>
                                     </div>
                                     <div class="row card-body col-xl-12 col-sm-12">
                                         <div class=" col-xl-12">
-                                        <form id="validation-form123" action="#!">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="form-label">Name</label>
-                                                        <input type="text" class="form-control" name="validation-email"
-                                                            placeholder="Enter Client Name">
-                                                    </div>
-                                                </div>
-												<div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="form-label">Email</label>
-                                                        <input type="text" class="form-control" name="validation-email"
-                                                            placeholder="Enter Client Email">
-                                                    </div>
-                                                </div> 
-												<div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="demo-password-input" class="form-label">Password</label>
-														<input class="form-control" type="password" value="" placeholder="Enter Password"
-															id="demo-password-input">
-                                                    </div>
-                                                </div>            
-												<div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="demo-password-input" class="form-label">Confirm Password</label>
-														<input class="form-control" type="password" value="" placeholder=" Confirm Password"
-															id="demo-password-input">
-                                                    </div>
-                                                </div>                                                                                                     
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="demo-input-file" class="form-label">Upload Logo</label>
-                                            			<input class="form-control" type="file" id="demo-input-file">
-                                                    </div>
-                                                </div>                                        										
-												<div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="form-label">Client Type</label>
-                                                        <select class="form-control" name="validation-select">
-                                                            <option value>Select Cliet Type</option>
-															<option value="pitons">Basic</option>
-                                                                <option value="cams">Pro</option>
-                                                                <option value="nuts">Business</option>
-                                                                <option value="bolts">Business Pro</option>                                                            
-                                                        </select>
-                                                    </div>
-                                                </div>
-												<div class="col-md-6">
-													<div class="form-group">
-														<label class="form-label">Start Date</label>
-														<div class=" input-daterange input-group text-center" id="datepicker_range">															
-															<div class="col-md-12">							
-																<input type="text" class="form-control text-start" placeholder="start date"
-																name="start" />																															
-															</div>																										
+											<form id="validation-form123" action="#!">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="form-group">
+															<label class="form-label">Video Category Title</label>
+															<input type="text" class="form-control" name="validation-email"
+																placeholder="Enter Video Category Title">
 														</div>
-													</div>
-													
-                                                </div>
-												<div class="col-md-12">
-													<div class="card">
-														<div class="card-header">
-															<h5 class="card-title">Set Client Expiry</h5>
-														</div>
-														<div class="card-body">
-															<div class="row">
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<input class="form-check-input input-primary" type="radio"
-																						name="group5" value="" id="customCheckinlh2">
-																		<label class="form-label">Premade Plan (Months)</label>
-																		<select class="form-control" name="validation-select">
-																			<option value>Select Plan</option>
-																			<option value="pitons">1 Month</option>
-																				<option value="cams">3 Months</option>
-																				<option value="nuts">6 Months</option>
-																				<option value="bolts">12 Months</option>                                                            
-																		</select>
-																	</div>
-																</div>
-																<div class="col-md-6">
-																	<div class="form-group">											
-																		<input class="form-check-input input-primary" type="radio"
-																			name="group5" value="" id="customCheckinlh1">
-																		<label class="form-label">Custom Plan (Days)</label>
-																		<input type="text" class="form-control" name="validation-email"
-																			placeholder="Enter No of Days">									
-																	</div> 
-																</div>																																                                         
-															</div>														 
-														</div>														
-													</div>																									
-												</div> 
-												<div class="col-md-12">
-													<div class="card">
-														<div class="card-header">
-															<h5>Select Route and buses for clients</h5>
-														</div>
-														<div class="card-body row">
-															 <div class="col-md-6">
-																<div class="form-group">
-																	<label class="form-label">Route</label>
-																	<div class="col-9">
-																		<div class="form-check" style="height: 55px;">
-																			<input type="checkbox" class="form-check-input input-primary"
-																				id="customCheckdefh1">
-																			<label class="custom-control-label"
-																				for="customCheckdefh1">Sajha Route 1</label>															
-																		</div>
-																		<div class="form-check" style="height: 45px">
-																			<input type="checkbox" class="form-check-input input-primary"
-																				id="customCheckdefh2">
-																			<label class="custom-control-label"
-																				for="customCheckdefh2">Ringroad Route</label>
-																		</div>
-																		<div class="form-check">
-																			<input type="checkbox" class="form-check-input input-primary"
-																				id="customCheckdefh4" disabled>
-																			<label class="custom-control-label"
-																				for="customCheckdefh4" disabled>Sajha Route 2</label>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="col-md-6">
-																<div class="form-group">
-																	<label class="form-label">Allocate No of buses</label>
-																	<input type="text" class="form-control-sm form-control"  name="validation-url"
-																		placeholder="Enter no of buses">
-																	<div style="height: 13px" ></div>
-																	<input type="text" class="form-control-sm form-control" name="validation-url"
-																		placeholder="Enter no of buses">
-																	<div style="height: 13px" ></div>
-																	<input type="text" class="form-control-sm form-control" name="validation-url"
-																		placeholder="Enter no of buses">
-																</div>
-															</div>																
-														</div>
-													</div>
-												</div>                                                                                 
-                                            </div>
-											<button type="submit" class="btn btn-primary">Submit</button>
-											<button class="btn btn-danger">Cancel</button>											
-                                        </form>
-                                        </div>
-                                        
+													</div>                                                                      
+												</div>
+												<button type="submit" class="btn btn-primary">Submit</button>
+												<button class="btn btn-danger">Cancel</button>											
+											</form>
+                                        </div>                                        
                                     </div>
                                 </div>
                             </div>
@@ -1061,21 +912,22 @@
 <script src="assets/js/pcoded.min.js"></script>
 
 
-<!-- am chart js -->
-<script src="assets/plugins/chart-am4/js/core.js"></script>
-<script src="assets/plugins/chart-am4/js/charts.js"></script>
-<script src="assets/plugins/chart-am4/js/animated.js"></script>
-<script src="assets/plugins/chart-am4/js/maps.js"></script>
-<script src="assets/plugins/chart-am4/js/worldLow.js"></script>
-<script src="assets/plugins/chart-am4/js/continentsLow.js"></script>
 
-<!-- datepicker js -->
-<script src="assets/plugins/bootstrap-datetimepicker/js/bootstrap-datepicker.min.js"></script>
-<script src="assets/js/pages/ac-datepicker.js"></script>
 
+<!-- jquery-validation Js -->
+<script src="assets/plugins/jquery-validation/js/jquery.validate.min.js"></script>
+<!-- form-picker-custom Js -->
+<script src="assets/js/pages/form-validation.js"></script>
+
+
+<!-- select2 Js -->
+<script src="assets/js/plugins/select2.full.min.js"></script>
+<!-- form-select-custom Js -->
+<script src="assets/js/pages/form-select-custom.js"></script>
 
 <!-- dashboard-custom js -->
 <script src="assets/js/pages/dashboard-analytics.js"></script>
+
 
 
 <div class="footer-fab">

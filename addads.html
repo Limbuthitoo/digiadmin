@@ -141,6 +141,15 @@
 					<li data-username="form elements advance component validation masking wizard picker select"
 						class="nav-item pcoded-hasmenu">
 						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-video"></i></span><span
+								class="pcoded-mtext">Video Cateogory</span></a>
+						<ul class="pcoded-submenu">
+							<li class=""><a href="addvideocategory.html" class="">Add Video Category</a></li>
+							<li class=""><a href="viewvideocategorylist.html" class="">Video Category List</a></li>							
+						</ul>
+					</li>
+					<li data-username="form elements advance component validation masking wizard picker select"
+						class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-play"></i></span><span
 								class="pcoded-mtext">Video Commercials</span></a>
 						<ul class="pcoded-submenu">
 							<li class=""><a href="addads.html" class="">Add Video Ads</a></li>
@@ -844,90 +853,104 @@
                                         <form id="validation-form123" action="#!">
                                             <div class="row">
                                                <div class="col-md-6">
-												 <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label class="form-label">Name</label>
-                                                        <input type="text" class="form-control" name="validation-email"
-                                                            placeholder="Enter Video Commercial Ad Name">
-                                                    </div>
-                                                </div>
-												<div class="row">
-													 <div class="col-md-6">
-														<div class="form-group">
-															<label class="form-label">Video File (less than 30 Sec)</label>
-															<input class="form-control" type="file" id="demo-input-file">
+													<div class="row">
+														<div class="col-md-6">
+															<div class="form-group">
+																<label class="form-label">Name</label>
+																<input type="text" class="form-control" name="validation-email"
+																	placeholder="Enter Video Commercial Ad Name">
+															</div>													
 														</div>
-													</div> 
-													<div class="col-md-6">
-														<div class="form-group">
-															<label class="form-label">Image File (Dimension: 430px x 1280px)</label>
-															<input class="form-control" type="file" id="demo-input-file">
+														<div class="col-md-6">
+															<div class="form-group">
+																<label class="form-label">Select Video Category</label>
+																<select class="form-control" name="validation-select">
+																	<option value>Select Category</option>
+																	<option value="pitons">Trailer</option>
+																	<option value="cams">Commercial Ad</option>
+																	<option value="nuts">Short Commercial Ad</option>																	                                                           
+																</select>
+															</div>													
 														</div>
-													</div> 
-												</div>                                                                                                   
+													</div>
+													
+													<div class="row">
+														<div class="col-md-6">
+															<div class="form-group">
+																<label class="form-label">Video File (less than 30 Sec)</label>
+																<input class="form-control" type="file" id="demo-input-file">
+															</div>
+														</div> 
+														<div class="col-md-6">
+															<div class="form-group">
+																<label class="form-label">Image File (Dimension: 430px x 1280px)</label>
+																<input class="form-control" type="file" id="demo-input-file">
+															</div>
+														</div> 
+													</div>                                                                                                   
                                                
-												<div class="col-md-12">
-													<div class="card">
-														<div class="card-header">
-															<h5>Select Route for Ads</h5>
-														</div>
-														<div class="card-body row">
-															 <div class="col-md-4">
-																<div class="form-group">
-																	<label class="form-label">Route</label>
-																	<div class="col-9">
-																		<div class="form-check" style="height: 55px;">
-																			<input type="checkbox" class="form-check-input input-primary"
-																				id="customCheckdefh1">
-																			<label class="custom-control-label"
-																				for="customCheckdefh1">Sajha Route 1</label>															
-																		</div>
-																		<div class="form-check" style="height: 45px">
-																			<input type="checkbox" class="form-check-input input-primary"
-																				id="customCheckdefh2">
-																			<label class="custom-control-label"
-																				for="customCheckdefh2">Ringroad Route</label>
-																		</div>
-																		<div class="form-check">
-																			<input type="checkbox" class="form-check-input input-primary"
-																				id="customCheckdefh4" disabled>
-																			<label class="custom-control-label"
-																				for="customCheckdefh4" disabled>Sajha Route 2</label>
+													<div class="col-md-12">
+														<div class="card">
+															<div class="card-header">
+																<h5>Select Route for Ads</h5>
+															</div>
+															<div class="card-body row">
+																<div class="col-md-4">
+																	<div class="form-group">
+																		<label class="form-label">Route</label>
+																		<div class="col-9">
+																			<div class="form-check" style="height: 55px;">
+																				<input type="checkbox" class="form-check-input input-primary"
+																					id="customCheckdefh1">
+																				<label class="custom-control-label"
+																					for="customCheckdefh1">Sajha Route 1</label>															
+																			</div>
+																			<div class="form-check" style="height: 45px">
+																				<input type="checkbox" class="form-check-input input-primary"
+																					id="customCheckdefh2">
+																				<label class="custom-control-label"
+																					for="customCheckdefh2">Ringroad Route</label>
+																			</div>
+																			<div class="form-check">
+																				<input type="checkbox" class="form-check-input input-primary"
+																					id="customCheckdefh4" disabled>
+																				<label class="custom-control-label"
+																					for="customCheckdefh4" disabled>Sajha Route 2</label>
+																			</div>
 																		</div>
 																	</div>
 																</div>
-															</div>
-															<div class="col-md-4">
-																<div class="form-group">
-																	<label class="form-label">Available Buses</label>
-																	<input type="text" class="form-control-sm form-control"  name="validation-url"
-																		placeholder="15 out of 25 Buses">
-																	<div style="height: 13px" ></div>
-																	<input type="text" class="form-control-sm form-control" name="validation-url"
-																		placeholder="10 out of 15 Buses">
-																	<div style="height: 13px" ></div>
-																	<input type="text" class="form-control-sm form-control" name="validation-url"
-																		placeholder="0 out of 10 Buses" disabled>
-																</div>
-															</div>		
-															<div class="col-md-4">
-																<div class="form-group">
-																	<label class="form-label">Action</label>
-																	<div style="height: 5px;"></div>														
-																	<button type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i
-																		class="feather icon-slash"></i>Reset Buses</button>
-																	<div style="height: 15px" ></div>
-																	<button type="button" class="btn btn-sm btn-outline-danger"  data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i
-																		class="feather icon-slash"></i>Reset Buses</button>
-																	<div style="height: 17px" ></div>
-																	<button type="button" class="btn btn-sm btn-outline-danger"  data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i
-																		class="feather icon-slash"></i>Reset Buses</button>
+																<div class="col-md-4">
+																	<div class="form-group">
+																		<label class="form-label">Available Buses</label>
+																		<input type="text" class="form-control-sm form-control"  name="validation-url"
+																			placeholder="15 out of 25 Buses">
+																		<div style="height: 13px" ></div>
+																		<input type="text" class="form-control-sm form-control" name="validation-url"
+																			placeholder="10 out of 15 Buses">
+																		<div style="height: 13px" ></div>
+																		<input type="text" class="form-control-sm form-control" name="validation-url"
+																			placeholder="0 out of 10 Buses" disabled>
+																	</div>
+																</div>		
+																<div class="col-md-4">
+																	<div class="form-group">
+																		<label class="form-label">Action</label>
+																		<div style="height: 5px;"></div>														
+																		<button type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i
+																			class="feather icon-slash"></i>Reset Buses</button>
+																		<div style="height: 15px" ></div>
+																		<button type="button" class="btn btn-sm btn-outline-danger"  data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i
+																			class="feather icon-slash"></i>Reset Buses</button>
+																		<div style="height: 17px" ></div>
+																		<button type="button" class="btn btn-sm btn-outline-danger"  data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i
+																			class="feather icon-slash"></i>Reset Buses</button>
+																	</div>
 																</div>
 															</div>
 														</div>
-													</div>
-												</div>  
-											   </div>
+													</div>  
+											   	</div>
 											   <!-- [ only-dots ] start -->
 												<div class="col-md-6">
 													<div class="card">												
