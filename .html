@@ -21,15 +21,18 @@
 	<meta name="author" content="Phoenixcoded" />
 
 	<!-- Favicon icon -->
-    <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon">
-    <!-- fontawesome icon -->
-    <link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome-all.min.css">
-    <!-- animation css -->
-    <link rel="stylesheet" href="assets/plugins/animation/css/animate.min.css">
-    <!-- select2 css -->
-    <link rel="stylesheet" href="assets/css/plugins/select2.min.css">
-    <!-- vendor css -->
-    <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="icon" href="assets/images/favicon.svg" type="image/x-icon">
+	<!-- fontawesome icon -->
+	<link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome-all.min.css">
+	<!-- animation css -->
+	<link rel="stylesheet" href="assets/plugins/animation/css/animate.min.css">
+
+	<!-- notification css -->
+	<link rel="stylesheet" href="assets/plugins/notification/css/notification.min.css">
+
+	<!-- vendor css -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body class="">
@@ -804,7 +807,7 @@
 										<ul class="breadcrumb">
 											<li class="breadcrumb-item"><a href="index.html"><i
 														class="feather icon-home"></i></a></li>
-											<li class="breadcrumb-item"><a href="#!">Add Announcement</a></li>
+											<li class="breadcrumb-item"><a href="#!">View Cities</a></li>
 										</ul>
 									</div>
 								</div>
@@ -813,63 +816,61 @@
 						<!-- [ breadcrumb ] end -->
 						<!-- [ Main Content ] start -->
 						<div class="row">							
-							 <!-- [ Form Validation ] start -->
-                            <div class="col-sm-6 col-xl-6">
-                                <div class="card col-xl-12 col-sm-12">
+							  <!-- [ stiped-table ] start -->
+                            <div class="col-xl-6">
+                                <div class="card">
                                     <div class="card-header">
-                                        <h5>Add  Announcement</h5>
+                                        <h5>Cities</h5>
+                                        
                                     </div>
-                                    <div class="row card-body col-xl-12 col-sm-12">
-                                        <div class=" col-xl-12">
-											<form id="validation-form123" action="#!">
-												<div class="row">
-													<div class="col-md-6">
-														<div class="form-group">
-															<label class="form-label">Announcement Title</label>
-															<input type="text" class="form-control" name="validation-email"
-																placeholder="Enter Announcement Title">
-														</div>
-													</div>                                                                                      
-													
-													<div class="col-md-6">
-														<div class="form-group">
-															<label class="form-label">Select Route</label>
-															<select class="js-example-basic-multiple form-control" name="validation-select" multiple="multiple">
-																<option value="AL">Alabama</option>
-																<option value="WY">Wyoming</option>
-																<option value="WY">Coming</option>
-																<option value="WY">Hanry Die</option>
-																<option value="WY">John Doe</option>
-                                                			</select>
-														</div>
-													</div> 	
-													<div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="form-label">Announcement Layout</label>
-                                                        <select class="form-control" name="validation-select">
-                                                            <option value>Select Layout</option>
-															<option value="pitons">Mahanagar Layout</option>
-                                                                <option value="cams">Sajha Yatayat Layout</option>
-                                                                <option value="nuts">Nagarik Yatayat Layout</option>
-                                                                <option value="bolts">NSRR Layout</option>                                                            
-                                                        </select>
-                                                    </div>
-                                                </div>        
-													<div class="col-md-6">
-														<div class="mb-3">
-															<label for="demo-input-file" class="form-label">Announcement Audio</label>
-															<input class="form-control" type="file" id="demo-input-file">
-														</div>
-													</div>										
-												</div>
-												<button type="submit" class="btn btn-primary">Submit</button>
-												<button class="btn btn-danger">Cancel</button>											
-											</form>
-                                        </div>                                        
+                                    <div class="card-body table-border-style">
+                                        <div class="table-responsive">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>SN No</th>
+                                                        <th>Cities</th>
+                                                        <th>Action</th>                                                       
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Kathmandu</td>
+                                                        <td>
+															<a href="" type="button" class="btn-sm btn-info" 
+																data-bs-toggle="tooltip">Edit</a>
+															<a href="" type="button" class="btn-sm btn-danger" 
+																data-bs-toggle="tooltip">Delete</a>
+														</td>                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Lalitpur</td>
+                                                        <td>
+															<a href="" type="button" class="btn-sm btn-info" 
+																data-bs-toggle="tooltip">Edit</a>
+															<a href="" type="button" class="btn-sm btn-danger" 
+																data-bs-toggle="tooltip">Delete</a>
+														</td>                                                                  
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>Bhaktapur</td>
+														<td>
+															<a href="" type="button" class="btn-sm btn-info" 
+																data-bs-toggle="tooltip">Edit</a>
+															<a href="" type="button" class="btn-sm btn-danger" 
+																data-bs-toggle="tooltip">Delete</a>
+														</td>                                                                    
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- [ Form Validation ] end -->							
+                            <!-- [ stiped-table ] end -->			
 						</div>
 						<!-- [ Main Content ] end -->
 					</div>
@@ -934,7 +935,13 @@
 <script src="assets/js/pcoded.min.js"></script>
 
 
-
+<!-- am chart js -->
+<script src="assets/plugins/chart-am4/js/core.js"></script>
+<script src="assets/plugins/chart-am4/js/charts.js"></script>
+<script src="assets/plugins/chart-am4/js/animated.js"></script>
+<script src="assets/plugins/chart-am4/js/maps.js"></script>
+<script src="assets/plugins/chart-am4/js/worldLow.js"></script>
+<script src="assets/plugins/chart-am4/js/continentsLow.js"></script>
 
 <!-- jquery-validation Js -->
 <script src="assets/plugins/jquery-validation/js/jquery.validate.min.js"></script>
@@ -942,14 +949,8 @@
 <script src="assets/js/pages/form-validation.js"></script>
 
 
-<!-- select2 Js -->
-<script src="assets/js/plugins/select2.full.min.js"></script>
-<!-- form-select-custom Js -->
-<script src="assets/js/pages/form-select-custom.js"></script>
-
 <!-- dashboard-custom js -->
 <script src="assets/js/pages/dashboard-analytics.js"></script>
-
 
 
 <div class="footer-fab">
