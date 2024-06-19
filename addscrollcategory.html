@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>Digibuzz Admin Panel</title>
+	<!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 11]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description"
+		content="Dasho Bootstrap admin template made using Bootstrap 5 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+	<meta name="keywords"
+		content="admin templates, bootstrap admin templates, bootstrap 5, dashboard, dashboard templets, sass admin templets, html admin templates, responsive, bootstrap admin templates free download,premium bootstrap admin templates, Dasho, Dasho bootstrap admin template">
+	<meta name="author" content="Phoenixcoded" />
+
+	<!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome-all.min.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="assets/plugins/animation/css/animate.min.css">
+    <!-- select2 css -->
+    <link rel="stylesheet" href="assets/css/plugins/select2.min.css">
+    <!-- vendor css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="">
+	<!-- [ Pre-loader ] start -->
+	<div class="loader-bg">
+		<div class="loader-track">
+			<div class="loader-fill"></div>
+		</div>
+	</div>
+	<!-- [ Pre-loader ] End -->
+	<!-- [ navigation menu ] start -->
+	<nav class="pcoded-navbar menupos-fixed menu-dark menu-item-icon-style6  ">
+		<div
+			class="navbar-wrapper ">
+			<div class="navbar-brand header-logo">
+				<a href="index.html" class="b-brand">
+
+					<img src="assets/images/logo.svg" alt="logo" class="logo images">
+					<img src="assets/images/logo-icon.svg" alt="logo" class="logo-thumb images">
+				</a>
+				<a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+			</div>
+			<div class="navbar-content scroll-div   "
+				id="layout-sidenav" >				
+				<ul class="nav pcoded-inner-navbar sidenav-inner">					
+					<li data-username="dashboard" class="nav-item"><a href="index.html" class="nav-link"><span class="pcoded-micon"><i
+									class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a></li>								
+					<li class="nav-item pcoded-menu-caption">
+						<label>Route Setup</label>
+					</li>
+					<li data-username="advance components alert gridstack lightbox modal notification pnotify rating rangeslider slider syntax highlighter tour User card Timeline tree view nestable toolbar"
+						class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-plus-square"></i></span><span
+								class="pcoded-mtext">City</span></a>
+						<ul class="pcoded-submenu">
+							<li class=""><a href="addcity.html" class="">Add City</a></li>
+							<li class=""><a href="viewcities.html" class="">City List</a></li>
+						</ul>
+					</li>
+					<li data-username="advance components alert gridstack lightbox modal notification pnotify rating rangeslider slider syntax highlighter tour User card Timeline tree view nestable toolbar"
+						class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-move"></i></span><span
+								class="pcoded-mtext">Stations</span></a>
+						<ul class="pcoded-submenu">
+							<li class=""><a href="addstation.html" class="">Add Station</a></li>
+							<li class=""><a href="viewstations.html" class="">Station List</a></li>
+						</ul>
+					</li>
+					<li data-username="basic components button alert badges breadcrumb pagination progress tooltip popovers carousel cards collapse tabs pills modal spinner grid system toasts typography extra shadows embeds"
+						class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-compass"></i></span><span
+								class="pcoded-mtext">Routes</span></a>
+						<ul class="pcoded-submenu">
+							<li class=""><a href="addroute.html" class="">Add Route</a></li>
+							<li class=""><a href="viewroutes.html" class="">Route List</a></li>
+						</ul>
+					</li>				
+					<li data-username="icons feather fontawsome flag material simple line themify" class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-disc"></i></span><span
+								class="pcoded-mtext">Buses</span></a>
+						<ul class="pcoded-submenu">
+							<li class=""><a href="addbus.html" class="">Add Bus</a></li>
+							<li class=""><a href="viewbuses.html" class="">Bus List</a></li>
+						</ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption">
+						<label>Announcement Setup</label>
+					</li>
+					<li data-username="icons feather fontawsome flag material simple line themify" class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-layout"></i></span><span
+								class="pcoded-mtext">Announcement Layout</span></a>
+						<ul class="pcoded-submenu">
+							<li class=""><a href="addanouncementlayout.html" class="">Add Announcement Layout</a></li>
+							<li class=""><a href="viewannouncementlayouts.html" class="">Announcement Layout List</a></li>
+						</ul>
+					</li>
+					<li data-username="icons feather fontawsome flag material simple line themify" class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-radio"></i></span><span
+								class="pcoded-mtext">Announcement</span></a>
+						<ul class="pcoded-submenu">
+							<li class=""><a href="addanouncement.html" class="">Add Announcement</a></li>
+							<li class=""><a href="viewannouncements.html" class="">Announcement List</a></li>
+						</ul>
+					</li>
+					
+					<li class="nav-item pcoded-menu-caption">
+						<label>Ads Setup</label>
+					</li>
+					<li data-username="form elements advance component validation masking wizard picker select"
+						class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-video"></i></span><span
+								class="pcoded-mtext">Video Commercials</span></a>
+						<ul class="pcoded-submenu">
+							<li class=""><a href="addads.html" class="">Add Video Ads</a></li>
+							<li class=""><a href="viewads.html" class="">Video Ads List</a></li>							
+						</ul>
+					</li>
+					<li data-username="form elements advance component validation masking wizard picker select"
+						class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-cast"></i></span><span
+								class="pcoded-mtext">Snippets</span></a>
+						<ul class="pcoded-submenu">
+							<li class=""><a href="addsnippet.html">Add  Snippet</a></li>
+							<li class=""><a href="viewsnippets.html">Snippet List</a></li>							
+						</ul>
+					</li>
+					<li data-username="form elements advance component validation masking wizard picker select"
+						class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-clock"></i></span><span
+								class="pcoded-mtext">Time Based Ads</span></a>
+						<ul class="pcoded-submenu">
+							<li><a href="addtimebased.html">Add Time Based</a></li>
+							<li><a href="viewtimebased.html">Time Based List</a></li>							
+						</ul>
+					</li>
+					<li data-username="form elements advance component validation masking wizard picker select"
+						class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-octagon"></i></span><span
+								class="pcoded-mtext">Location Announcement Ads</span></a>
+						<ul class="pcoded-submenu">
+							<li><a href="addannouncementads.html">Add Announcement Ad</a></li>
+							<li><a href="viewannouncementads.html">View Announcement Ads</a></li>							
+						</ul>
+					</li>
+					<li data-username="form elements advance component validation masking wizard picker select"
+						class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-map-pin"></i></span><span
+								class="pcoded-mtext">Location Based Ads</span></a>
+						<ul class="pcoded-submenu">
+							<li><a href="addlocationbased.html">Add Location Based</a></li>
+							<li><a href="viewlocationbased.html">Location Based List</a></li>							
+						</ul>
+					</li>
+					<li data-username="form elements advance component validation masking wizard picker select"
+						class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-chevrons-right"></i></span><span
+								class="pcoded-mtext">Station Follow Up Ads</span></a>
+						<ul class="pcoded-submenu">
+							<li><a href="addstationfollowup.html">Add Station Follow Up</a></li>
+							<li><a href="viewstationfollowup.html">Station Fillow Up List</a></li>
+						</ul>
+					</li>
+					<li data-username="form elements advance component validation masking wizard picker select"
+						class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-music"></i></span><span
+								class="pcoded-mtext">Songs</span></a>
+						<ul class="pcoded-submenu">
+							<li><a href="addsong.html">Add Song</a></li>
+							<li><a href="addsongs.html">Song List</a></li>
+						</ul>
+					</li>
+					<li data-username="form elements advance component validation masking wizard picker select"
+						class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-film"></i></span><span
+								class="pcoded-mtext">Movies</span></a>
+						<ul class="pcoded-submenu">
+							<li><a href="addmovie.html">Add Movie</a></li>
+							<li><a href="viewmovies.html">Movie List</a></li>
+						</ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption">
+						<label>Scrolling Text Setup</label>
+					</li>
+					<li data-username="table basic sizing border styling" class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-align-justify"></i></span><span
+								class="pcoded-mtext">Scrolling Categories</span></a>
+						<ul class="pcoded-submenu">
+							<li class=""><a href="addscrollcategory.html" class="">Add Scrolling Category</a></li>
+							<li class=""><a href="viewscrollcategories.html" class="">Scrolling Category List</a></li>							
+						</ul>
+					</li>
+					<li data-username="table basic advance styling api ajax server plugin data sources" class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-package"></i></span><span
+								class="pcoded-mtext">Scrolling Texts</span></a>
+						<ul class="pcoded-submenu">
+							<li class=""><a href="adscrolltext.html" class="">Add Scrolling Text</a></li>
+							<li class=""><a href="viewscrolltexts.html" class="">Scrolling Text List</a></li>							
+						</ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption">
+						<label>Client Setup</label>
+					</li>
+					<li data-username="ClientProfiles" class="nav-item"><a href="clientprofile.html" class="nav-link"><span class="pcoded-micon"><i
+									class="feather icon-home"></i></span><span class="pcoded-mtext">Client Profiles</span></a></li>
+					<li data-username="table basic sizing border styling" class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-align-justify"></i></span><span
+								class="pcoded-mtext">Client Type</span></a>
+						<ul class="pcoded-submenu">
+							<li class=""><a href="addclienttype.html" class="">Add Client Type</a></li>
+							<li class=""><a href="viewclienttypess.html" class="">Client Type List</a></li>							
+						</ul>
+					</li>
+					<li data-username="table basic sizing border styling" class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-align-justify"></i></span><span
+								class="pcoded-mtext">Client</span></a>
+						<ul class="pcoded-submenu">
+							<li class=""><a href="addclient.html" class="">Add Client</a></li>
+							<li class=""><a href="viewclients.html" class="">Client List</a></li>							
+						</ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption">
+						<label>User Setup</label>
+					</li>
+					<li data-username="table basic sizing border styling" class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-align-justify"></i></span><span
+								class="pcoded-mtext">Roles</span></a>
+						<ul class="pcoded-submenu">
+							<li class=""><a href="addrole.html" class="">Add Role</a></li>
+							<li class=""><a href="viewroles.html" class="">Role List</a></li>							
+						</ul>
+					</li>
+					<li data-username="table basic advance styling api ajax server plugin data sources" class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-package"></i></span><span
+								class="pcoded-mtext">Users</span></a>
+						<ul class="pcoded-submenu">
+							<li class=""><a href="adduser.html" class="">Add User</a></li>
+							<li class=""><a href="viewusers.html" class="">User List</a></li>							
+						</ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption">
+						<label>Setting</label>
+					</li>
+					<li data-username="setting" class="nav-item"><a href="setting.html" class="nav-link"><span class="pcoded-micon"><i
+									class="feather icon-settings"></i></span><span class="pcoded-mtext">General Setting</span></a></li>
+					<li data-username="maps google vector google map search api location" class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-map"></i></span><span
+								class="pcoded-mtext">Activity Log</span></a>
+						<ul class="pcoded-submenu">
+							<li class=""><a href="userlogs.html" class="">User Log</a></li>
+							<li class=""><a href="contentlogs.html" class="">Content Log</a></li>
+							<li class=""><a href="devicelogs.html" class="">Device Log</a></li>
+							<li class=""><a href="routelogs.html" class="">Route Log</a></li>
+							<li class=""><a href="buslogs.html" class="">Bus Log</a></li>
+
+						</ul>
+					</li>					
+				</ul>				
+			</div>			
+		</div>
+	</nav>
+	<!-- [ navigation menu ] end -->
+	<!-- [ Header ] start -->
+	<header class="navbar pcoded-header navbar-expand-lg navbar-light headerpos-fixed">
+		
+			<div class="m-header">
+				<a class="mobile-menu" id="mobile-collapse1" href="#!"><span></span></a>
+				<a href="index.html" class="b-brand">
+
+					<img src="assets/images/logo.svg" alt="" class="logo images">
+					<img src="assets/images/logo-icon.svg" alt="" class="logo-thumb images">
+				</a>
+			</div>
+			<a class="mobile-menu" id="mobile-header" href="#!">
+				<i class="feather icon-more-horizontal"></i>
+			</a>
+			<div class="collapse navbar-collapse">
+				<a href="#!" class="mob-toggler"></a>
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item">
+						<div class="main-search open">
+							<div class="input-group">
+								<input type="text" id="m-search" class="form-control" placeholder="Search . . .">
+								<a href="#!" class="input-group-append search-close">
+									<i class="feather icon-x input-group-text"></i>
+								</a>
+								<span class="ms-1 input-group-append search-btn btn btn-primary">
+									<i class="feather icon-search input-group-text"></i>
+								</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="navbar-nav ms-auto">
+					<li>
+						<div class="dropdown">
+							<a class="dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false"><i
+									class="icon feather icon-bell"></i></a>
+							<div class="dropdown-menu dropdown-menu-end notification">
+								<div class="noti-head">
+									<h6 class="d-inline-block m-b-0">Notifications</h6>
+									<div class="float-end">
+										<a href="#!" class="m-r-10">mark as read</a>
+										<a href="#!">clear all</a>
+									</div>
+								</div>
+								<ul class="noti-body">
+									<li class="n-title">
+										<p class="m-b-0">NEW</p>
+									</li>
+									<li class="notification">
+										<div class="d-flex">
+											<img class="img-radius" src="assets/images/user/avatar-1.jpg"
+												alt="Profile Image">
+											<div class="flex-grow-1">
+												<p><strong>John Doe</strong><span class="n-time text-muted"><i
+															class="icon feather icon-clock m-r-10"></i>5 min</span></p>
+												<p>New ticket Added</p>
+											</div>
+										</div>
+									</li>
+									<li class="n-title">
+										<p class="m-b-0">EARLIER</p>
+									</li>
+									<li class="notification">
+										<div class="d-flex">
+											<img class="img-radius" src="assets/images/user/avatar-2.jpg"
+												alt="Profile Image">
+											<div class="flex-grow-1">
+												<p><strong>Joseph William</strong><span class="n-time text-muted"><i
+															class="icon feather icon-clock m-r-10"></i>10 min</span></p>
+												<p>Prchace New Theme and make payment</p>
+											</div>
+										</div>
+									</li>
+									<li class="notification">
+										<div class="d-flex">
+											<img class="img-radius" src="assets/images/user/avatar-3.jpg"
+												alt="Profile Image">
+											<div class="flex-grow-1">
+												<p><strong>Sara Soudein</strong><span class="n-time text-muted"><i
+															class="icon feather icon-clock m-r-10"></i>12 min</span></p>
+												<p>currently login</p>
+											</div>
+										</div>
+									</li>
+									<li class="notification">
+										<div class="d-flex">
+											<img class="img-radius" src="assets/images/user/avatar-1.jpg"
+												alt="Profile Image">
+											<div class="flex-grow-1">
+												<p><strong>Joseph William</strong><span class="n-time text-muted"><i
+															class="icon feather icon-clock m-r-10"></i>30 min</span></p>
+												<p>Prchace New Theme and make payment</p>
+											</div>
+										</div>
+									</li>
+									<li class="notification">
+										<div class="d-flex">
+											<img class="img-radius" src="assets/images/user/avatar-3.jpg"
+												alt="Profile Image">
+											<div class="flex-grow-1">
+												<p><strong>Sara Soudein</strong><span class="n-time text-muted"><i
+															class="icon feather icon-clock m-r-10"></i>1 hour</span></p>
+												<p>currently login</p>
+											</div>
+										</div>
+									</li>
+									<li class="notification">
+										<div class="d-flex">
+											<img class="img-radius" src="assets/images/user/avatar-1.jpg"
+												alt="Profile Image">
+											<div class="flex-grow-1">
+												<p><strong>Joseph William</strong><span class="n-time text-muted"><i
+															class="icon feather icon-clock m-r-10"></i>2 hour</span></p>
+												<p>Prchace New Theme and make payment</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div class="noti-footer">
+									<a href="#!">show all</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li><a href="#!" class="displayChatbox"><i class="icon feather icon-mail"></i></a></li>
+					<li>
+						<div class="dropdown drp-user">
+							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+								<i class="icon feather icon-settings"></i>
+							</a>
+							<div class="dropdown-menu dropdown-menu-end profile-notification">
+								<div class="pro-head">
+									<img src="assets/images/user/avatar-1.jpg" class="img-radius"
+										alt="User-Profile-Image">
+									<span>
+										<span class="text-muted">Free Trial</span>
+										<span class="h6">doe@company.com</span>
+									</span>
+								</div>
+								<ul class="pro-body">
+									<li><a href="#!" class="dropdown-item"><i class="feather icon-settings"></i>
+											Settings</a></li>
+									<li><a href="#!" class="dropdown-item"><i class="feather icon-user"></i> Profile</a>
+									</li>
+									<li><a href="message.html" class="dropdown-item"><i class="feather icon-mail"></i>
+											My Messages</a></li>
+									<li><a href="auth-signin.html" class="dropdown-item"><i
+												class="feather icon-lock"></i> Lock Screen</a></li>
+									<li><a href="#!" class="dropdown-item"><i
+												class="feather icon-power text-danger"></i> Logout</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+	</header>
+	<!-- [ Header ] end -->
+	
+
+	<!-- [ chat user list ] start -->
+	<section class="header-user-list">
+		<a href="#!" class="h-close-text"><i class="feather icon-x"></i></a>
+		<ul class="nav nav-tabs" id="chatTab" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active text-uppercase" id="chat-tab" data-bs-toggle="tab" href="#chat" role="tab"
+					aria-controls="chat" aria-selected="true"><i class="feather icon-message-circle me-2"></i>Chat</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-uppercase" id="user-tab" data-bs-toggle="tab" href="#user" role="tab"
+					aria-controls="user" aria-selected="false"><i class="feather icon-users me-2"></i>User</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-uppercase" id="setting-tab" data-bs-toggle="tab" href="#setting" role="tab"
+					aria-controls="setting" aria-selected="false"><i class="feather icon-settings me-2"></i>Setting</a>
+			</li>
+		</ul>
+		<div class="tab-content" id="chatTabContent">
+			<div class="tab-pane fade show active" id="chat" role="tabpanel" aria-labelledby="chat-tab">
+				<div class="h-list-header">
+					<div class="input-group">
+						<input type="text" id="search-friends" class="form-control" placeholder="Search Friend . . .">
+					</div>
+				</div>
+				<div class="h-list-body">
+					<div class="main-friend-cont scroll-div">
+						<div class="main-friend-list">
+							<div class="d-flex userlist-box" data-id="1" data-status="online"
+								data-username="Josephin Doe">
+								<a class="media-left" href="#!"><img class="media-object img-radius"
+										src="assets/images/user/avatar-1.jpg" alt="Profile Image ">
+									<div class="live-status">3</div>
+								</a>
+								<div class="flex-grow-1">
+									<h6 class="chat-header">Josephin Doe<small class="d-block text-c-green">Typing . .
+										</small></h6>
+								</div>
+							</div>
+							<div class="media userlist-box" data-id="2" data-status="online" data-username="Lary Doe">
+								<a class="media-left" href="#!"><img class="media-object img-radius"
+										src="assets/images/user/avatar-2.jpg" alt="Profile Image">
+									<div class="live-status">1</div>
+								</a>
+								<div class="media-body">
+									<h6 class="chat-header">Lary Doe<small class="d-block text-c-green">online</small>
+									</h6>
+								</div>
+							</div>
+							<div class="media userlist-box" data-id="3" data-status="online" data-username="Alice">
+								<a class="media-left" href="#!"><img class="media-object img-radius"
+										src="assets/images/user/avatar-3.jpg" alt="Profile Image"></a>
+								<div class="media-body">
+									<h6 class="chat-header">Alice<small class="d-block text-c-green">online</small></h6>
+								</div>
+							</div>
+							<div class="media userlist-box" data-id="4" data-status="offline" data-username="Alia">
+								<a class="media-left" href="#!"><img class="media-object img-radius"
+										src="assets/images/user/avatar-1.jpg" alt="Profile Image">
+									<div class="live-status">1</div>
+								</a>
+								<div class="media-body">
+									<h6 class="chat-header">Alia<small class="d-block text-muted">10 min ago</small>
+									</h6>
+								</div>
+							</div>
+							<div class="media userlist-box" data-id="5" data-status="offline" data-username="Suzen">
+								<a class="media-left" href="#!"><img class="media-object img-radius"
+										src="assets/images/user/avatar-4.jpg" alt="Profile Image"></a>
+								<div class="media-body">
+									<h6 class="chat-header">Suzen<small class="d-block text-muted">15 min ago</small>
+									</h6>
+								</div>
+							</div>
+							<div class="media userlist-box" data-id="1" data-status="online"
+								data-username="Josephin Doe">
+								<a class="media-left" href="#!"><img class="media-object img-radius"
+										src="assets/images/user/avatar-1.jpg" alt="Profile Image ">
+									<div class="live-status">3</div>
+								</a>
+								<div class="media-body">
+									<h6 class="chat-header">Josephin Doe<small class="d-block text-c-green">Typing . .
+										</small></h6>
+								</div>
+							</div>
+							<div class="media userlist-box" data-id="2" data-status="online" data-username="Lary Doe">
+								<a class="media-left" href="#!"><img class="media-object img-radius"
+										src="assets/images/user/avatar-2.jpg" alt="Profile Image">
+									<div class="live-status">1</div>
+								</a>
+								<div class="media-body">
+									<h6 class="chat-header">Lary Doe<small class="d-block text-c-green">online</small>
+									</h6>
+								</div>
+							</div>
+							<div class="media userlist-box" data-id="3" data-status="online" data-username="Alice">
+								<a class="media-left" href="#!"><img class="media-object img-radius"
+										src="assets/images/user/avatar-3.jpg" alt="Profile Image"></a>
+								<div class="media-body">
+									<h6 class="chat-header">Alice<small class="d-block text-c-green">online</small></h6>
+								</div>
+							</div>
+							<div class="media userlist-box" data-id="4" data-status="offline" data-username="Alia">
+								<a class="media-left" href="#!"><img class="media-object img-radius"
+										src="assets/images/user/avatar-1.jpg" alt="Profile Image">
+									<div class="live-status">1</div>
+								</a>
+								<div class="media-body">
+									<h6 class="chat-header">Alia<small class="d-block text-muted">10 min ago</small>
+									</h6>
+								</div>
+							</div>
+							<div class="media userlist-box" data-id="5" data-status="offline" data-username="Suzen">
+								<a class="media-left" href="#!"><img class="media-object img-radius"
+										src="assets/images/user/avatar-4.jpg" alt="Profile Image"></a>
+								<div class="media-body">
+									<h6 class="chat-header">Suzen<small class="d-block text-muted">15 min ago</small>
+									</h6>
+								</div>
+							</div>
+							<div class="media userlist-box" data-id="1" data-status="online"
+								data-username="Josephin Doe">
+								<a class="media-left" href="#!"><img class="media-object img-radius"
+										src="assets/images/user/avatar-1.jpg" alt="Profile Image ">
+									<div class="live-status">3</div>
+								</a>
+								<div class="media-body">
+									<h6 class="chat-header">Josephin Doe<small class="d-block text-c-green">Typing . .
+										</small></h6>
+								</div>
+							</div>
+							<div class="media userlist-box" data-id="2" data-status="online" data-username="Lary Doe">
+								<a class="media-left" href="#!"><img class="media-object img-radius"
+										src="assets/images/user/avatar-2.jpg" alt="Profile Image">
+									<div class="live-status">1</div>
+								</a>
+								<div class="media-body">
+									<h6 class="chat-header">Lary Doe<small class="d-block text-c-green">online</small>
+									</h6>
+								</div>
+							</div>
+							<div class="media userlist-box" data-id="3" data-status="online" data-username="Alice">
+								<a class="media-left" href="#!"><img class="media-object img-radius"
+										src="assets/images/user/avatar-3.jpg" alt="Profile Image"></a>
+								<div class="media-body">
+									<h6 class="chat-header">Alice<small class="d-block text-c-green">online</small></h6>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="user" role="tabpanel" aria-labelledby="user-tab">
+				<div class="h-list-body">
+					<div class="main-friend-cont scroll-div">
+						<div class="main-friend-list">
+							<div class="media px-3 d-flex align-items-center mt-3">
+								<a class="media-left m-r-15" href="#!">
+									<div
+										class="hei-50 wid-50 bg-primary img-radius d-flex text-white f-22 align-items-center justify-content-center">
+										<i class="icon feather icon-users"></i>
+									</div>
+								</a>
+								<div class="media-body">
+									<p class="chat-header f-w-600 mb-0">New Group</p>
+								</div>
+							</div>
+							<div class="media p-3 d-flex align-items-center">
+								<a class="media-left m-r-15" href="#!">
+									<div
+										class="hei-50 wid-50 bg-primary img-radius d-flex text-white f-22 align-items-center justify-content-center">
+										<i class="icon feather icon-user-plus"></i>
+									</div>
+								</a>
+								<div class="media-body">
+									<p class="chat-header f-w-600 mb-0">New Contact</p>
+								</div>
+							</div>
+							<div class="media userlist-box" data-id="1" data-status="online"
+								data-username="Josephin Doe">
+								<a class="media-left" href="#!"><img class="media-object img-radius"
+										src="assets/images/user/avatar-1.jpg" alt="Profile Image "></a>
+								<div class="media-body">
+									<p class="chat-header">Josephin Doe<small class="d-block">i am not what happened .
+											.</small></p>
+								</div>
+							</div>
+							<div class="media userlist-box" data-id="2" data-status="online" data-username="Lary Doe">
+								<a class="media-left" href="#!"><img class="media-object img-radius"
+										src="assets/images/user/avatar-2.jpg" alt="Profile Image"></a>
+								<div class="media-body">
+									<h6 class="chat-header">Lary Doe<small class="d-block">Avalable</small></h6>
+								</div>
+							</div>
+							<div class="media userlist-box" data-id="3" data-status="online" data-username="Alice">
+								<a class="media-left" href="#!"><img class="media-object img-radius"
+										src="assets/images/user/avatar-3.jpg" alt="Profile Image"></a>
+								<div class="media-body">
+									<h6 class="chat-header">Alice<small class="d-block">hear using Dasho</small></h6>
+								</div>
+							</div>
+							<div class="media userlist-box" data-id="4" data-status="offline" data-username="Alia">
+								<a class="media-left" href="#!">
+									<div
+										class="hei-50 wid-50 img-radius bg-success d-flex text-white f-22 align-items-center justify-content-center">
+										A</div>
+								</a>
+								<div class="media-body">
+									<h6 class="chat-header">Alia<small class="d-block text-muted">Avalable</small></h6>
+								</div>
+							</div>
+							<div class="media userlist-box" data-id="5" data-status="offline" data-username="Suzen">
+								<a class="media-left" href="#!"><img class="media-object img-radius"
+										src="assets/images/user/avatar-4.jpg" alt="Profile Image"></a>
+								<div class="media-body">
+									<h6 class="chat-header">Suzen<small class="d-block text-muted">Avalable</small></h6>
+								</div>
+							</div>
+							<div class="media userlist-box" data-id="1" data-status="online"
+								data-username="Josephin Doe">
+								<a class="media-left" href="#!">
+									<div
+										class="hei-50 wid-50 bg-danger img-radius d-flex text-white f-22 align-items-center justify-content-center">
+										JD</div>
+								</a>
+								<div class="media-body">
+									<h6 class="chat-header">Josephin Doe<small class="d-block text-muted">Don't send me
+											image</small></h6>
+								</div>
+							</div>
+							<div class="media userlist-box" data-id="2" data-status="online" data-username="Lary Doe">
+								<a class="media-left" href="#!"><img class="media-object img-radius"
+										src="assets/images/user/avatar-2.jpg" alt="Profile Image"></a>
+								<div class="media-body">
+									<h6 class="chat-header">Lary Doe<small class="d-block text-muted">not send free
+											msg</small></h6>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="setting" role="tabpanel" aria-labelledby="setting-tab">
+				<div class="p-4 main-friend-cont scroll-div">
+					<h6 class="mt-2"><i class="feather icon-monitor me-2"></i>Desktop settings</h6>
+					<hr>
+					<div class="form-group mb-0">
+						<div class="switch switch-primary d-inline m-r-10">
+							<input type="checkbox" id="cn-p-1" checked>
+							<label for="cn-p-1" class="cr switch-alignment"></label>
+						</div>
+						<label class="f-w-600">Allow desktop notification</label>
+					</div>
+					<p class="text-muted ms-5">You get latest content at a time when data will updated</p>
+					<div class="form-group mb-0">
+						<div class="switch switch-primary d-inline m-r-10">
+							<input type="checkbox" id="cn-p-5">
+							<label for="cn-p-5" class="cr switch-alignment"></label>
+						</div>
+						<label class="f-w-600">Store Cookie</label>
+					</div>
+					<h6 class="mb-0 mt-5"><i class="feather icon-layout me-2"></i>Application settings</h6>
+					<hr>
+					<div class="form-group mb-0">
+						<div class="switch switch-primary d-inline m-r-10">
+							<input type="checkbox" id="cn-p-3" checked>
+							<label for="cn-p-3" class="cr switch-alignment"></label>
+						</div>
+						<label class="f-w-600">Backup Storage</label>
+					</div>
+					<p class="text-muted mb-0 ms-5">Automaticaly take backup as par schedule</p>
+					<div class="form-group mb-4">
+						<div class="switch switch-primary d-inline m-r-10">
+							<input type="checkbox" id="cn-p-4" checked>
+							<label for="cn-p-4" class="cr switch-alignment"></label>
+						</div>
+						<label class="f-w-600">Allow guest to print file</label>
+					</div>
+					<h6 class="mb-0 mt-5"><i class="feather icon-globe me-2"></i>System settings</h6>
+					<hr>
+					<div class="form-group mb-0">
+						<div class="switch switch-primary d-inline m-r-10">
+							<input type="checkbox" id="cn-p-2">
+							<label for="cn-p-2" class="cr switch-alignment"></label>
+						</div>
+						<label class="f-w-600">View other user chat</label>
+					</div>
+					<p class="text-muted ms-5">Allow to show public user message</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- [ chat user list ] end -->
+
+	<!-- [ chat message ] start -->
+	<section class="header-chat">
+		<div class="h-list-header">
+			<h6>Josephin Doe</h6>
+			<a href="#!" class="h-back-user-list"><i class="feather icon-chevron-left"></i></a>
+		</div>
+		<div class="h-list-body">
+			<div class="main-chat-cont scroll-div">
+				<div class="main-friend-chat">
+					<div class="d-flex chat-messages">
+						<a class="media-left photo-table" href="#!"><img
+								class="media-object img-radius img-radius m-t-5" src="assets/images/user/avatar-2.jpg"
+								alt="Profile Image"></a>
+						<div class="flex-grow-1 chat-menu-content">
+							<div class="">
+								<p class="chat-cont">hello tell me something</p>
+								<p class="chat-cont">about yourself?</p>
+							</div>
+							<p class="chat-time">8:20 a.m.</p>
+						</div>
+					</div>
+					<div class="d-flex chat-messages">
+						<div class="flex-grow-1 chat-menu-reply">
+							<div class="">
+								<p class="chat-cont">Ohh! very nice</p>
+							</div>
+							<p class="chat-time">8:22 a.m.</p>
+						</div>
+						<a class="media-right photo-table" href="#!"><img
+								class="media-object img-radius img-radius m-t-5" src="assets/images/user/avatar-1.jpg"
+								alt="Profile Image"></a>
+					</div>
+					<div class="d-flex chat-messages">
+						<a class="media-left photo-table" href="#!"><img
+								class="media-object img-radius img-radius m-t-5" src="assets/images/user/avatar-2.jpg"
+								alt="Profile Image"></a>
+						<div class="flex-grow-1 chat-menu-content">
+							<div class="">
+								<p class="chat-cont">can you help me?</p>
+							</div>
+							<p class="chat-time">8:20 a.m.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="h-list-footer">
+			<div class="input-group">
+				<input type="file" class="chat-attach" style="display:none">
+				<a href="#!" class="input-group-prepend btn btn-success btn-attach">
+					<i class="feather icon-paperclip"></i>
+				</a>
+				<input type="text" name="h-chat-text" class="form-control h-send-chat" placeholder="Write hear . . ">
+				<button type="submit" class="input-group-append btn-send btn btn-primary">
+					<i class="feather icon-message-circle"></i>
+				</button>
+			</div>
+		</div>
+	</section>
+	<!-- [ chat message ] end -->
+
+<!-- [ Main Content ] start -->
+<section class="pcoded-main-container">
+	<div class="pcoded-wrapper">
+		<div class="pcoded-content">
+			<div class="pcoded-inner-content">
+				<div class="main-body">
+					<div class="page-wrapper">
+						<!-- [ breadcrumb ] start -->
+						<div class="page-header">
+							<div class="page-block">
+								<div class="row align-items-center">
+									<div class="col-md-12">
+										<div class="page-header-title">
+											
+										</div>
+										<ul class="breadcrumb">
+											<li class="breadcrumb-item"><a href="index.html"><i
+														class="feather icon-home"></i></a></li>
+											<li class="breadcrumb-item"><a href="#!">Add Scroll Category</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- [ breadcrumb ] end -->
+						<!-- [ Main Content ] start -->
+						<div class="row">							
+							 <!-- [ Form Validation ] start -->
+                            <div class="col-sm-6 col-xl-6">
+                                <div class="card col-xl-12 col-sm-12">
+                                    <div class="card-header">
+                                        <h5>Add Scroll Category</h5>
+                                    </div>
+                                    <div class="row card-body col-xl-12 col-sm-12">
+                                        <div class=" col-xl-12">
+											<form id="validation-form123" action="#!">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="form-group">
+															<label class="form-label">Scroll Category Title</label>
+															<input type="text" class="form-control" name="validation-email"
+																placeholder="Enter Scroll Category Title">
+														</div>
+													</div>                                                                      
+												</div>
+												<button type="submit" class="btn btn-primary">Submit</button>
+												<button class="btn btn-danger">Cancel</button>											
+											</form>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ Form Validation ] end -->							
+						</div>
+						<!-- [ Main Content ] end -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- [ Main Content ] end -->
+
+<!-- Warning Section start -->
+<!-- Older IE warning message -->
+<!--[if lt IE 11]>
+        <div class="ie-warning">
+            <h1>Warning!!</h1>
+            <p>You are using an outdated version of Internet Explorer, please upgrade
+               <br/>to any of the following web browsers to access this website.
+            </p>
+            <div class="iew-container">
+                <ul class="iew-download">
+                    <li>
+                        <a href="http://www.google.com/chrome/">
+                            <img src="assets/images/browser/chrome.png" alt="Chrome">
+                            <div>Chrome</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.mozilla.org/en-US/firefox/new/">
+                            <img src="assets/images/browser/firefox.png" alt="Firefox">
+                            <div>Firefox</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.opera.com">
+                            <img src="assets/images/browser/opera.png" alt="Opera">
+                            <div>Opera</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.apple.com/safari/">
+                            <img src="assets/images/browser/safari.png" alt="Safari">
+                            <div>Safari</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                            <img src="assets/images/browser/ie.png" alt="">
+                            <div>IE (11 & above)</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p>Sorry for the inconvenience!</p>
+        </div>
+    <![endif]-->
+<!-- Warning Section Ends -->
+
+<!-- Required Js -->
+<script src="assets/js/vendor-all.min.js"></script>
+<script src="assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/pcoded.min.js"></script>
+<script src="assets/js/menu-setting.js"></script>
+
+
+
+<!-- jquery-validation Js -->
+<script src="assets/plugins/jquery-validation/js/jquery.validate.min.js"></script>
+<!-- form-picker-custom Js -->
+<script src="assets/js/pages/form-validation.js"></script>
+
+
+<!-- select2 Js -->
+<script src="assets/js/plugins/select2.full.min.js"></script>
+<!-- form-select-custom Js -->
+<script src="assets/js/pages/form-select-custom.js"></script>
+
+<!-- dashboard-custom js -->
+<script src="assets/js/pages/dashboard-analytics.js"></script>
+
+
+
+<div class="footer-fab">
+    <div class="b-bg">
+        <i class="fas fa-question"></i>
+    </div>
+    <div class="fab-hover">
+        <ul class="list-unstyled">
+            <li><a href="../doc/index-bc-package.html" target="_blank" data-text="UI Kit" class="btn btn-icon btn-rounded btn-info m-0"><i class="feather icon-layers"></i></a></li>
+            <li><a href="../doc/index.html" target="_blank" data-text="Document" class="btn btn-icon btn-rounded btn-primary m-0"><i class="feather icon feather icon-book"></i></a></li>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+
+</html>
