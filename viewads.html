@@ -30,12 +30,6 @@
 	<!-- notification css -->
 	<link rel="stylesheet" href="assets/plugins/notification/css/notification.min.css">
 
-	<!-- minicolors css -->
-    <link rel="stylesheet" href="assets/plugins/mini-color/css/jquery.minicolors.css">
-
-     <!-- select2 css -->
-    <link rel="stylesheet" href="assets/css/plugins/select2.min.css">
-
 	<!-- vendor css -->
 	<link rel="stylesheet" href="assets/css/style.css">
 
@@ -814,7 +808,7 @@
 										<ul class="breadcrumb">
 											<li class="breadcrumb-item"><a href="index.html"><i
 														class="feather icon-home"></i></a></li>
-											<li class="breadcrumb-item"><a href="#!">Add Route</a></li>
+											<li class="breadcrumb-item"><a href="#!">View Advertisement</a></li>
 										</ul>
 									</div>
 								</div>
@@ -823,467 +817,130 @@
 						<!-- [ breadcrumb ] end -->
 						<!-- [ Main Content ] start -->
 						<div class="row">							
-							 <!-- [ Form Validation ] start -->
-                            <div class="col-sm-12">
-                                <div class="card col-xl-12 col-sm-12">
+							  <!-- [ stiped-table ] start -->
+                            <div class="col-xl-12">
+                                <div class="card">
                                     <div class="card-header">
-                                        <h5>Add Route</h5>
+                                        <h5>Advertisements</h5>
+                                        
                                     </div>
-                                    <div class="row card-body col-xl-12 col-sm-12">
-                                        <div class=" col-xl-6">
-                                        <form id="validation-form123" action="#!">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label class="form-label"> Route Name</label>
-                                                        <input type="text" class="form-control" name="validation-email"
-                                                            placeholder="Route Name">
-                                                    </div>
-                                                </div>                                                                                              
-                                                                                                
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label class="form-label">Route Color</label>
-                                                        <input type="text" id="hue-demo" class="form-control demo"
-															data-control="hue" value="#006000">	
-                                                    </div>
-                                                </div>                                                
-												<div class="col-xl-3">
-													<div class="form-check form-switch custom-switch-v1 mb-2">
-														<label class="form-check-label align-text-top"
-															for="customswitchv2-1">Circular Route</label>
-														<input type="checkbox"
-															class="form-check-input input-primary custom-control-input"
-															id="customswitchv2-1" unchecked>														
-                                                	</div>
-												</div>												                                                                                
-                                            </div>
-                                            <button type="submit" class="btn btn-primary">Submit</button>
-											<button class="btn btn-danger">Cancel</button>
-                                        </form>
-                                        </div> 
-										<div class="col-lg-3">
-											<div class="card">
-												<div class="card-header">
-													<h5>Positive Route</h5>
-												</div>
-												<div class="card-body">
-													<form class="repeater2">
-														<div data-repeater-list="outer-list">
-															<div data-repeater-item>
-																<div class="border p-2 mb-2">
-																	<div class="input-group mb-2">
-																		<input type="text" class="form-control" name="text-input"
-																			value="A">
-																		<div class="input-group-append">
-																			<a href="javascript:;" class="btn btn-danger"
-																				data-repeater-delete type="button" value="Delete">
-																				<i class="feather icon-x m-0"></i>
-																			</a>
-																		</div>
-																	</div>
-																	<!-- innner repeater -->
-																	<div class="inner-repeater">
-																		<div data-repeater-list="inner-list">
-																			<div data-repeater-item>
-																				<div class="input-group mb-2">
-																					<input type="text" class="form-control"
-																						name="text-input" value="B">
-																					<div class="input-group-append">
-																						<a href="javascript:;"
-																							class="btn btn-danger"
-																							data-repeater-delete type="button"
-																							value="Delete">
-																							<i class="feather icon-x m-0"></i>
-																						</a>
-																					</div>
-																				</div>
-																			</div>
-																		</div>																		
-																	</div>
-																	<!-- innner repeater -->
-																	<div class="inner-repeater">
-																		<div data-repeater-list="inner-list">
-																			<div data-repeater-item>
-																				<div class="input-group mb-2">
-																					<input type="text" class="form-control"
-																						name="text-input" value="B">
-																					<div class="input-group-append">
-																						<a href="javascript:;"
-																							class="btn btn-danger"
-																							data-repeater-delete type="button"
-																							value="Delete">
-																							<i class="feather icon-x m-0"></i>
-																						</a>
-																					</div>
-																				</div>
-																			</div>
-																		</div>																		
-																	</div>
-																	<!-- innner repeater -->
-																	<div class="inner-repeater">
-																		<div data-repeater-list="inner-list">
-																			<div data-repeater-item>
-																				<div class="input-group mb-2">
-																					<input type="text" class="form-control"
-																						name="text-input" value="B">
-																					<div class="input-group-append">
-																						<a href="javascript:;"
-																							class="btn btn-danger"
-																							data-repeater-delete type="button"
-																							value="Delete">
-																							<i class="feather icon-x m-0"></i>
-																						</a>
-																					</div>
-																				</div>
-																			</div>
-																		</div>																		
-																	</div>
-																	<!-- innner repeater -->
-																	<div class="inner-repeater">
-																		<div data-repeater-list="inner-list">
-																			<div data-repeater-item>
-																				<div class="input-group mb-2">
-																					<input type="text" class="form-control"
-																						name="text-input" value="B">
-																					<div class="input-group-append">
-																						<a href="javascript:;"
-																							class="btn btn-danger"
-																							data-repeater-delete type="button"
-																							value="Delete">
-																							<i class="feather icon-x m-0"></i>
-																						</a>
-																					</div>
-																				</div>
-																			</div>
-																		</div>																		
-																	</div>
-																	<div class="inner-repeater">
-																		<div data-repeater-list="inner-list">
-																			<div data-repeater-item>
-																				<div class="input-group mb-2">
-																					<input type="text" class="form-control"
-																						name="text-input" value="B">
-																					<div class="input-group-append">
-																						<a href="javascript:;"
-																							class="btn btn-danger"
-																							data-repeater-delete type="button"
-																							value="Delete">
-																							<i class="feather icon-x m-0"></i>
-																						</a>
-																					</div>
-																				</div>
-																			</div>
-																		</div>																		
-																	</div>
-																	<div class="inner-repeater">
-																		<div data-repeater-list="inner-list">
-																			<div data-repeater-item>
-																				<div class="input-group mb-2">
-																					<input type="text" class="form-control"
-																						name="text-input" value="B">
-																					<div class="input-group-append">
-																						<a href="javascript:;"
-																							class="btn btn-danger"
-																							data-repeater-delete type="button"
-																							value="Delete">
-																							<i class="feather icon-x m-0"></i>
-																						</a>
-																					</div>
-																				</div>
-																			</div>
-																		</div>																		
-																	</div>
-																	<div class="inner-repeater">
-																		<div data-repeater-list="inner-list">
-																			<div data-repeater-item>
-																				<div class="input-group mb-2">
-																					<input type="text" class="form-control"
-																						name="text-input" value="B">
-																					<div class="input-group-append">
-																						<a href="javascript:;"
-																							class="btn btn-danger"
-																							data-repeater-delete type="button"
-																							value="Delete">
-																							<i class="feather icon-x m-0"></i>
-																						</a>
-																					</div>
-																				</div>
-																			</div>
-																		</div>																		
-																	</div>
-																</div>
+                                    <div class="card-body table-border-style">
+                                        <div class="table-responsive">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>SN No</th>
+														<th>Title</th>
+														<th>Preview</th>
+														<th>Client</th>
+														<th>Status</th>
+														<th>Expiry Date</th>
+														<th>Ad Repetition</th>
+														<th>No of Buses</th>
+                                                        <th>Active</th>
+                                                        <th>Action</th>                                                       
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Coke Ad</td>
+                                                        <td>
+															<img src="assets/images/slider/img-slide-1.jpg" alt="" width="150px" class="img-fluid">		
+														</td>
+                                                        <td>Coke</td>
+                                                        <td>
+															<a type="button" class="btn btn-icon btn-rounded btn-outline-primary" title="Screenshot"><i
+																class="feather icon-camera"></i></a>
+															<a type="button" class="btn btn-icon btn-rounded btn-outline-warning" title="Content List"><i
+																class="feather icon-layers"></i></a>
+														</td>										
+														<td>7/20/2024</td>
+                                                        <td>15 Min</td>
+														<td>Sajha Route 1 (10 Buses)<br>Sajha Route 2 (5 Buses)</td>
+                                                        <td>
+															<div class="form-check form-switch mb-2">
+																<input type="checkbox" class="form-check-input input-primary"
+																	id="customswitchv1-1">
+																<label class="form-check-label"
+																	for="customswitchv1-1">isActive</label>
 															</div>
-														</div>														
-													</form>
-												</div>
-											</div>
-										</div>
-										<div class="col-lg-3">
-											<div class="card">
-												<div class="card-header">
-													<h5>Negative Route</h5>
-												</div>
-												<div class="card-body">
-													<form class="repeater2">
-														<div data-repeater-list="outer-list">
-															<div data-repeater-item>
-																<div class="border p-2 mb-2">
-																	<div class="input-group mb-2">
-																		<input type="text" class="form-control" name="text-input"
-																			value="A">
-																		<div class="input-group-append">
-																			<a href="javascript:;" class="btn btn-danger"
-																				data-repeater-delete type="button" value="Delete">
-																				<i class="feather icon-x m-0"></i>
-																			</a>
-																		</div>
-																	</div>
-																	<!-- innner repeater -->
-																	<div class="inner-repeater">
-																		<div data-repeater-list="inner-list">
-																			<div data-repeater-item>
-																				<div class="input-group mb-2">
-																					<input type="text" class="form-control"
-																						name="text-input" value="B">
-																					<div class="input-group-append">
-																						<a href="javascript:;"
-																							class="btn btn-danger"
-																							data-repeater-delete type="button"
-																							value="Delete">
-																							<i class="feather icon-x m-0"></i>
-																						</a>
-																					</div>
-																				</div>
-																			</div>
-																		</div>																		
-																	</div>
-																	<!-- innner repeater -->
-																	<div class="inner-repeater">
-																		<div data-repeater-list="inner-list">
-																			<div data-repeater-item>
-																				<div class="input-group mb-2">
-																					<input type="text" class="form-control"
-																						name="text-input" value="B">
-																					<div class="input-group-append">
-																						<a href="javascript:;"
-																							class="btn btn-danger"
-																							data-repeater-delete type="button"
-																							value="Delete">
-																							<i class="feather icon-x m-0"></i>
-																						</a>
-																					</div>
-																				</div>
-																			</div>
-																		</div>																		
-																	</div>
-																	<!-- innner repeater -->
-																	<div class="inner-repeater">
-																		<div data-repeater-list="inner-list">
-																			<div data-repeater-item>
-																				<div class="input-group mb-2">
-																					<input type="text" class="form-control"
-																						name="text-input" value="B">
-																					<div class="input-group-append">
-																						<a href="javascript:;"
-																							class="btn btn-danger"
-																							data-repeater-delete type="button"
-																							value="Delete">
-																							<i class="feather icon-x m-0"></i>
-																						</a>
-																					</div>
-																				</div>
-																			</div>
-																		</div>																		
-																	</div>
-																	<!-- innner repeater -->
-																	<div class="inner-repeater">
-																		<div data-repeater-list="inner-list">
-																			<div data-repeater-item>
-																				<div class="input-group mb-2">
-																					<input type="text" class="form-control"
-																						name="text-input" value="B">
-																					<div class="input-group-append">
-																						<a href="javascript:;"
-																							class="btn btn-danger"
-																							data-repeater-delete type="button"
-																							value="Delete">
-																							<i class="feather icon-x m-0"></i>
-																						</a>
-																					</div>
-																				</div>
-																			</div>
-																		</div>																		
-																	</div>
-																	<div class="inner-repeater">
-																		<div data-repeater-list="inner-list">
-																			<div data-repeater-item>
-																				<div class="input-group mb-2">
-																					<input type="text" class="form-control"
-																						name="text-input" value="B">
-																					<div class="input-group-append">
-																						<a href="javascript:;"
-																							class="btn btn-danger"
-																							data-repeater-delete type="button"
-																							value="Delete">
-																							<i class="feather icon-x m-0"></i>
-																						</a>
-																					</div>
-																				</div>
-																			</div>
-																		</div>																		
-																	</div>
-																	<div class="inner-repeater">
-																		<div data-repeater-list="inner-list">
-																			<div data-repeater-item>
-																				<div class="input-group mb-2">
-																					<input type="text" class="form-control"
-																						name="text-input" value="B">
-																					<div class="input-group-append">
-																						<a href="javascript:;"
-																							class="btn btn-danger"
-																							data-repeater-delete type="button"
-																							value="Delete">
-																							<i class="feather icon-x m-0"></i>
-																						</a>
-																					</div>
-																				</div>
-																			</div>
-																		</div>																		
-																	</div>
-																	<div class="inner-repeater">
-																		<div data-repeater-list="inner-list">
-																			<div data-repeater-item>
-																				<div class="input-group mb-2">
-																					<input type="text" class="form-control"
-																						name="text-input" value="B">
-																					<div class="input-group-append">
-																						<a href="javascript:;"
-																							class="btn btn-danger"
-																							data-repeater-delete type="button"
-																							value="Delete">
-																							<i class="feather icon-x m-0"></i>
-																						</a>
-																					</div>
-																				</div>
-																			</div>
-																		</div>																		
-																	</div>
-																</div>
+														</td>
+                                                       	<td>
+															<a href="" type="button" class="btn-sm btn-info" 
+																data-bs-toggle="tooltip">Edit</a>
+															<a href="" type="button" class="btn-sm btn-danger" 
+																data-bs-toggle="tooltip">Delete</a>
+														</td>                                          
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Daraz 11:11 Ad</td>
+                                                        <td><img src="assets/images/slider/img-slide-1.jpg" alt="" width="150px" class="img-fluid">		</td>
+                                                        <td>Daraz</td>
+                                                        <td>
+															<a type="button" class="btn btn-icon btn-rounded btn-outline-primary" title="Screenshot"><i
+																class="feather icon-camera"></i></a>
+															<a type="button" class="btn btn-icon btn-rounded btn-outline-warning" title="Content List"><i
+																class="feather icon-layers"></i></a>
+														</td>										
+														<td>6/19/2025</td>
+                                                        <td>10 Min</td>
+														<td>Sajha Route 1 (5 Buses)<br>Ringroad 1 (15 Buses) <br>Sajha Route 4 (5 Buses) </td>
+                                                        <td>
+															<div class="form-check form-switch mb-2">
+																<input type="checkbox" class="form-check-input input-primary"
+																	id="customswitchv1-1">
+																<label class="form-check-label"
+																	for="customswitchv1-1">isActive</label>
 															</div>
-														</div>														
-													</form>
-												</div>
-											</div>
-										</div>                                   
+														</td>
+                                                       	<td>
+															<a href="" type="button" class="btn-sm btn-info" 
+																data-bs-toggle="tooltip">Edit</a>
+															<a href="" type="button" class="btn-sm btn-danger" 
+																data-bs-toggle="tooltip">Delete</a>
+														</td>                                          
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Ultima 100 Ad</td>
+                                                        <td>								
+															<img src="assets/images/slider/img-slide-1.jpg" alt="" width="150px" class="img-fluid">															
+														</td>
+                                                        <td>Ultima lifestyle</td>
+                                                        <td>
+															<a type="button" class="btn btn-icon btn-rounded btn-outline-primary" title="Screenshot"><i
+																class="feather icon-camera"></i></a>
+															<a type="button" class="btn btn-icon btn-rounded btn-outline-warning" title="Content List"><i
+																class="feather icon-layers"></i></a>
+														</td>										
+														<td>9/20/2024</td>
+                                                        <td>30 Min</td>
+														<td>Ringroad 1<br>15 out of 20 buses</td>
+                                                        <td>
+															<div class="form-check form-switch mb-2">
+																<input type="checkbox" class="form-check-input input-primary"
+																	id="customswitchv1-1">
+																<label class="form-check-label"
+																	for="customswitchv1-1">isActive</label>
+															</div>
+														</td>
+                                                       	<td>
+															<a href="" type="button" class="btn-sm btn-info" 
+																data-bs-toggle="tooltip">Edit</a>
+															<a href="" type="button" class="btn-sm btn-danger" 
+																data-bs-toggle="tooltip">Delete</a>
+														</td>                                          
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- [ Form Validation ] end -->
-							<!-- [ outline-button ] start -->
-							<div class="col-sm-12">
-								<div class="card ">
-									<div class="card-header ">
-                                        <div class="row col-xl-12 ">                                            
-                                            <div class="col-xl-6">
-                                                <h4>
-                                                    Station List
-                                                </h4>
-                                            </div> 
-                                            <div class="col-xl-3 row">                                                                                         
-                                                <div class="col-lg-4 col-md-9 col-xl-12 col-sm-12">
-                                                    <select class="js-example-placeholder-multiple col-sm-12">
-                                                        <option value="AL">Select City</option>
-                                                        <option value="WY">Bhaktapur</option>
-                                                        <option value="WY">Biratnagar</option>
-                                                        <option value="WY">Chitwan</option>
-                                                        <option value="WY">Butwal</option>
-                                                    </select>                                             
-                                                </div>
-                                            </div> 
-                                            <div class="col-xl-3">                                        
-                                                <div class="main-search">
-                                                    <div class="input-group">
-                                                        <input type="text" id="m-search" class="form-control" placeholder="Search . . .">                                                                
-                                                        <span class="search-btn btn btn-primary align-items-center">
-                                                            <i class="feather icon-search "></i>
-                                                        </span>
-                                                    </div>
-                                                </div>                                                   
-                                            </div>                                                                                         
-                                        </div>										
-									</div>
-									<div class="card-body">
-										<button type="button" class="btn btn-outline-primary"
-											title="btn btn-outline-primary" data-bs-toggle="tooltip">Lagankhel</button>
-										<button type="button" class="btn btn-outline-primary"
-											title="btn btn-outline-primary"
-											data-bs-toggle="tooltip">Koteshwor</button>
-										<button type="button" class="btn btn-outline-primary"
-											title="btn btn-outline-primary" data-bs-toggle="tooltip">Airport</button>
-										<button type="button" class="btn btn-outline-primary"
-											title="btn btn-outline-primary" data-bs-toggle="tooltip">Gaushala</button>
-										<button type="button" class="btn btn-outline-primary"
-											title="btn btn-outline-primary" data-bs-toggle="tooltip">Balkumari</button>
-										<button type="button" class="btn btn-outline-primary" title="btn btn-outline-primary"
-											data-bs-toggle="tooltip">Sinamangal</button>
-										<button type="button" class="btn btn-outline-primary"
-											title="btn btn-outline-primary" data-bs-toggle="tooltip">Chabahil</button>
-										<button type="button" class="btn btn-outline-primary" title="btn btn-outline-primary"
-											data-bs-toggle="tooltip">Narayan Gopal Chowk</button>
-                                        <button type="button" class="btn btn-outline-primary"
-											title="btn btn-outline-primary" data-bs-toggle="tooltip">Basundhara</button>
-										<button type="button" class="btn btn-outline-primary"
-											title="btn btn-outline-primary"
-											data-bs-toggle="tooltip">Budanilkantha</button>
-										<button type="button" class="btn btn-outline-primary"
-											title="btn btn-outline-primary" data-bs-toggle="tooltip">Chapali</button>
-										<button type="button" class="btn btn-outline-primary"
-											title="btn btn-outline-primary" data-bs-toggle="tooltip">Hattigauda</button>
-										<button type="button" class="btn btn-outline-primary"
-											title="btn btn-outline-primary" data-bs-toggle="tooltip">Hadigaun</button>
-										<button type="button" class="btn btn-outline-primary" title="btn btn-outline-primary"
-											data-bs-toggle="tooltip">Ratnapark</button>
-										<button type="button" class="btn btn-outline-primary"
-											title="btn btn-outline-primary" data-bs-toggle="tooltip">Sita Paila</button>
-										<button type="button" class="btn btn-outline-primary" title="btn btn-outline-primary"
-											data-bs-toggle="tooltip">Kalimati</button>
-											<button type="button" class="btn btn-outline-primary"
-											title="btn btn-outline-primary"
-											data-bs-toggle="tooltip">Budanilkantha</button>
-										<button type="button" class="btn btn-outline-primary"
-											title="btn btn-outline-primary" data-bs-toggle="tooltip">Chapali</button>
-										<button type="button" class="btn btn-outline-primary"
-											title="btn btn-outline-primary" data-bs-toggle="tooltip">Hattigauda</button>
-										<button type="button" class="btn btn-outline-primary"
-											title="btn btn-outline-primary" data-bs-toggle="tooltip">Hadigaun</button>
-										<button type="button" class="btn btn-outline-primary" title="btn btn-outline-primary"
-											data-bs-toggle="tooltip">Ratnapark</button>
-										<button type="button" class="btn btn-outline-primary"
-											title="btn btn-outline-primary" data-bs-toggle="tooltip">Sita Paila</button>
-										<button type="button" class="btn btn-outline-primary" title="btn btn-outline-primary"
-											data-bs-toggle="tooltip">Kalimati</button>
-											<button type="button" class="btn btn-outline-primary"
-											title="btn btn-outline-primary"
-											data-bs-toggle="tooltip">Budanilkantha</button>
-										<button type="button" class="btn btn-outline-primary"
-											title="btn btn-outline-primary" data-bs-toggle="tooltip">Chapali</button>
-										<button type="button" class="btn btn-outline-primary"
-											title="btn btn-outline-primary" data-bs-toggle="tooltip">Hattigauda</button>
-										<button type="button" class="btn btn-outline-primary"
-											title="btn btn-outline-primary" data-bs-toggle="tooltip">Hadigaun</button>
-										<button type="button" class="btn btn-outline-primary" title="btn btn-outline-primary"
-											data-bs-toggle="tooltip">Ratnapark</button>
-										<button type="button" class="btn btn-outline-primary"
-											title="btn btn-outline-primary" data-bs-toggle="tooltip">Sita Paila</button>
-										<button type="button" class="btn btn-outline-primary" title="btn btn-outline-primary"
-											data-bs-toggle="tooltip">Kalimati</button>
-									</div>
-								</div>
-							</div>
-							<!-- [ outline-button ] end -->
+                            <!-- [ stiped-table ] end -->			
 						</div>
-
 						<!-- [ Main Content ] end -->
 					</div>
 				</div>
@@ -1360,67 +1017,9 @@
 <!-- form-picker-custom Js -->
 <script src="assets/js/pages/form-validation.js"></script>
 
-<!-- select2 Js -->
-<script src="assets/js/plugins/select2.full.min.js"></script>
-<!-- form-select-custom Js -->
-<script src="assets/js/pages/form-select-custom.js"></script>
-
-<!-- minicolors Js -->
-<script src="assets/plugins/mini-color/js/jquery.minicolors.min.js"></script>
-<script>
-    $('.demo').each(function () {
-        $(this).minicolors({
-            control: $(this).attr('data-control') || 'hue',
-            defaultValue: $(this).attr('data-defaultValue') || '',
-            format: $(this).attr('data-format') || 'hex',
-            keywords: $(this).attr('data-keywords') || '',
-            inline: $(this).attr('data-inline') === 'true',
-            letterCase: $(this).attr('data-letterCase') || 'lowercase',
-            opacity: $(this).attr('data-opacity'),
-            position: $(this).attr('data-position') || 'bottom',
-            swatches: $(this).attr('data-swatches') ? $(this).attr('data-swatches').split('|') : [],
-            change: function (value, opacity) {
-                if (!value) return;
-                if (opacity) value += ', ' + opacity;
-                if (typeof console === 'object') { }
-            },
-            theme: 'bootstrap'
-        });
-    });
-</script>
 
 <!-- dashboard-custom js -->
 <script src="assets/js/pages/dashboard-analytics.js"></script>
-
-<script src="assets/js/plugins/jquery.repeater.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $('.repeater').repeater({
-            initEmpty: true,
-            defaultValues: {
-                'text-input': 'foo'
-            },
-            show: function () {
-                $(this).slideDown();
-            },
-            hide: function (deleteElement) {
-                if (confirm('Are you sure you want to delete this element?')) {
-                    $(this).slideUp(deleteElement);
-                }
-            },
-            isFirstItemUndeletable: true
-        })
-    });
-</script>
-<script>
-    $(document).ready(function () {
-        $('.repeater2').repeater({
-            repeaters: [{
-                selector: '.inner-repeater'
-            }]
-        });
-    });
-</script>
 
 
 <div class="footer-fab">
