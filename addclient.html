@@ -898,44 +898,91 @@
 													</div>
 													
                                                 </div>
-												<div class="col-md-12">
-													<div class="card">
-														<div class="card-header">
-															<h5 class="card-title">Set Client Expiry</h5>
+												<div class="col-md-6">
+													<div class="form-group">
+														<label class="form-label">End Date</label>
+														<div class=" input-daterange input-group text-center" id="datepicker_range">															
+															<div class="col-md-12">							
+																<input type="text" class="form-control text-start" placeholder="start date"
+																name="start" />																															
+															</div>																										
 														</div>
-														<div class="card-body">
-															<div class="row">
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<input class="form-check-input input-primary" type="radio"
-																						name="group5" value="" id="customCheckinlh2">
-																		<label class="form-label">Premade Plan (Months)</label>
-																		<select class="form-control" name="validation-select">
-																			<option value>Select Plan</option>
-																			<option value="pitons">1 Month</option>
-																				<option value="cams">3 Months</option>
-																				<option value="nuts">6 Months</option>
-																				<option value="bolts">12 Months</option>                                                            
-																		</select>
-																	</div>
-																</div>
-																<div class="col-md-6">
-																	<div class="form-group">											
-																		<input class="form-check-input input-primary" type="radio"
-																			name="group5" value="" id="customCheckinlh1">
-																		<label class="form-label">Custom Plan (Days)</label>
-																		<input type="text" class="form-control" name="validation-email"
-																			placeholder="Enter No of Days">									
-																	</div> 
-																</div>																																                                         
-															</div>														 
-														</div>														
-													</div>																									
-												</div> 
+													</div>
+													
+                                                </div>
+												
 												<div class="col-md-12">
 													<div class="card">
 														<div class="card-header">
-															<h5>Select Route and buses for clients</h5>
+															<input type="checkbox" class="form-check-input input-primary"
+																				id="customCheckdefh1">
+																			<h5><label class="custom-control-label"
+																				for="customCheckdefh1">Video Commercials</label></h5>
+														</div>
+														<div class="card-body row">
+															<div class="col-md-12">
+																<div class="row">
+																	<div class="col-md-6">
+																		<div class="form-group">
+																			<label class="form-label">Route</label>
+																			<div class="col-9">
+																				<div class="form-check" style="height: 55px;">
+																					<input type="checkbox" class="form-check-input input-primary"
+																						id="customCheckdefh1">
+																					<label class="custom-control-label"
+																						for="customCheckdefh1">Sajha Route 1</label>															
+																				</div>
+																				<div class="form-check" style="height: 45px">
+																					<input type="checkbox" class="form-check-input input-primary"
+																						id="customCheckdefh2">
+																					<label class="custom-control-label"
+																						for="customCheckdefh2">Ringroad Route</label>
+																				</div>
+																				<div class="form-check">
+																					<input type="checkbox" class="form-check-input input-primary"
+																						id="customCheckdefh4" disabled>
+																					<label class="custom-control-label"
+																						for="customCheckdefh4" disabled>Sajha Route 2</label>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col-md-6">
+																		<div class="form-group">
+																			<label class="form-label">Allocate No of buses</label>
+																			<input type="text" class="form-control-sm form-control"  name="validation-url"
+																				placeholder="Enter no of buses">
+																			<div style="height: 13px" ></div>
+																			<input type="text" class="form-control-sm form-control" name="validation-url"
+																				placeholder="Enter no of buses">
+																			<div style="height: 13px" ></div>
+																			<input type="text" class="form-control-sm form-control" name="validation-url"
+																				placeholder="Enter no of buses">
+																		</div>
+																	</div>	
+																</div>
+															</div>
+															<div class="col-md-12">
+																<div class="row">
+																	<div class="col-md-6">
+																		<div class="form-group">
+																			<label class="form-label">Allocated Time</label>
+																			<input type="text" class="form-control" name="validation-email"
+																				placeholder="Enter time allocated to client">
+																		</div>
+																	</div>																	
+																</div>
+															</div>															
+														</div>
+													</div>
+												</div>
+												<div class="col-md-12">
+													<div class="card">
+														<div class="card-header">
+															<input type="checkbox" class="form-check-input input-primary"
+																				id="customCheckdefh1">
+																			<h5><label class="custom-control-label"
+																				for="customCheckdefh1">Aston Ads</label></h5>
 														</div>
 														<div class="card-body row">
 															 <div class="col-md-6">
@@ -978,6 +1025,257 @@
 															</div>																
 														</div>
 													</div>
+												</div>
+												<div class="col-md-12">
+													<div class="card">
+														<div class="card-header">
+															<input type="checkbox" class="form-check-input input-primary"
+																				id="customCheckdefh1">
+																			<h5><label class="custom-control-label"
+																				for="customCheckdefh1">Snippets</label></h5>
+														</div>
+														<div class="card-body row">
+															 <div class="col-md-6">
+																<div class="form-group">
+																	<label class="form-label">Route</label>
+																	<div class="col-9">
+																		<div class="form-check" style="height: 55px;">
+																			<input type="checkbox" class="form-check-input input-primary"
+																				id="customCheckdefh1">
+																			<label class="custom-control-label"
+																				for="customCheckdefh1">Sajha Route 1</label>															
+																		</div>
+																		<div class="form-check" style="height: 45px">
+																			<input type="checkbox" class="form-check-input input-primary"
+																				id="customCheckdefh2">
+																			<label class="custom-control-label"
+																				for="customCheckdefh2">Ringroad Route</label>
+																		</div>
+																		<div class="form-check">
+																			<input type="checkbox" class="form-check-input input-primary"
+																				id="customCheckdefh4" disabled>
+																			<label class="custom-control-label"
+																				for="customCheckdefh4" disabled>Sajha Route 2</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-6">
+																<div class="form-group">
+																	<label class="form-label">Allocate No of buses</label>
+																	<input type="text" class="form-control-sm form-control"  name="validation-url"
+																		placeholder="Enter no of buses">
+																	<div style="height: 13px" ></div>
+																	<input type="text" class="form-control-sm form-control" name="validation-url"
+																		placeholder="Enter no of buses">
+																	<div style="height: 13px" ></div>
+																	<input type="text" class="form-control-sm form-control" name="validation-url"
+																		placeholder="Enter no of buses">
+																</div>
+															</div>																
+														</div>
+													</div>
+												</div>
+												<div class="col-md-12">
+													<div class="card">
+														<div class="card-header">
+															<input type="checkbox" class="form-check-input input-primary"
+																				id="customCheckdefh1">
+																			<h5><label class="custom-control-label"
+																				for="customCheckdefh1">Locationbased Ads</label></h5>
+														</div>
+														<div class="card-body row">
+															 <div class="col-md-6">
+																<div class="form-group">
+																	<label class="form-label">Route</label>
+																	<div class="col-9">
+																		<div class="form-check" style="height: 55px;">
+																			<input type="checkbox" class="form-check-input input-primary"
+																				id="customCheckdefh1">
+																			<label class="custom-control-label"
+																				for="customCheckdefh1">Sajha Route 1</label>															
+																		</div>
+																		<div class="form-check" style="height: 45px">
+																			<input type="checkbox" class="form-check-input input-primary"
+																				id="customCheckdefh2">
+																			<label class="custom-control-label"
+																				for="customCheckdefh2">Ringroad Route</label>
+																		</div>
+																		<div class="form-check">
+																			<input type="checkbox" class="form-check-input input-primary"
+																				id="customCheckdefh4" disabled>
+																			<label class="custom-control-label"
+																				for="customCheckdefh4" disabled>Sajha Route 2</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-6">
+																<div class="form-group">
+																	<label class="form-label">Allocate No of buses</label>
+																	<input type="text" class="form-control-sm form-control"  name="validation-url"
+																		placeholder="Enter no of buses">
+																	<div style="height: 13px" ></div>
+																	<input type="text" class="form-control-sm form-control" name="validation-url"
+																		placeholder="Enter no of buses">
+																	<div style="height: 13px" ></div>
+																	<input type="text" class="form-control-sm form-control" name="validation-url"
+																		placeholder="Enter no of buses">
+																</div>
+															</div>																
+														</div>
+													</div>
+												</div>
+												<div class="col-md-12">
+													<div class="card">
+														<div class="card-header">
+															<input type="checkbox" class="form-check-input input-primary"
+																				id="customCheckdefh1">
+																			<h5><label class="custom-control-label"
+																				for="customCheckdefh1">Announcement Ads</label></h5>
+														</div>
+														<div class="card-body row">
+															 <div class="col-md-6">
+																<div class="form-group">
+																	<label class="form-label">Route</label>
+																	<div class="col-9">
+																		<div class="form-check" style="height: 55px;">
+																			<input type="checkbox" class="form-check-input input-primary"
+																				id="customCheckdefh1">
+																			<label class="custom-control-label"
+																				for="customCheckdefh1">Sajha Route 1</label>															
+																		</div>
+																		<div class="form-check" style="height: 45px">
+																			<input type="checkbox" class="form-check-input input-primary"
+																				id="customCheckdefh2">
+																			<label class="custom-control-label"
+																				for="customCheckdefh2">Ringroad Route</label>
+																		</div>
+																		<div class="form-check">
+																			<input type="checkbox" class="form-check-input input-primary"
+																				id="customCheckdefh4" disabled>
+																			<label class="custom-control-label"
+																				for="customCheckdefh4" disabled>Sajha Route 2</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-6">
+																<div class="form-group">
+																	<label class="form-label">Allocate No of buses</label>
+																	<input type="text" class="form-control-sm form-control"  name="validation-url"
+																		placeholder="Enter no of buses">
+																	<div style="height: 13px" ></div>
+																	<input type="text" class="form-control-sm form-control" name="validation-url"
+																		placeholder="Enter no of buses">
+																	<div style="height: 13px" ></div>
+																	<input type="text" class="form-control-sm form-control" name="validation-url"
+																		placeholder="Enter no of buses">
+																</div>
+															</div>																
+														</div>
+														
+													</div>
+													<div class="col-md-12">
+													<div class="card">
+														<div class="card-header">
+															<input type="checkbox" class="form-check-input input-primary"
+																				id="customCheckdefh1">
+																			<h5><label class="custom-control-label"
+																				for="customCheckdefh1">Followup Ads</label></h5>
+														</div>
+														<div class="card-body row">
+															 <div class="col-md-6">
+																<div class="form-group">
+																	<label class="form-label">Route</label>
+																	<div class="col-9">
+																		<div class="form-check" style="height: 55px;">
+																			<input type="checkbox" class="form-check-input input-primary"
+																				id="customCheckdefh1">
+																			<label class="custom-control-label"
+																				for="customCheckdefh1">Sajha Route 1</label>															
+																		</div>
+																		<div class="form-check" style="height: 45px">
+																			<input type="checkbox" class="form-check-input input-primary"
+																				id="customCheckdefh2">
+																			<label class="custom-control-label"
+																				for="customCheckdefh2">Ringroad Route</label>
+																		</div>
+																		<div class="form-check">
+																			<input type="checkbox" class="form-check-input input-primary"
+																				id="customCheckdefh4" disabled>
+																			<label class="custom-control-label"
+																				for="customCheckdefh4" disabled>Sajha Route 2</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-6">
+																<div class="form-group">
+																	<label class="form-label">Allocate No of buses</label>
+																	<input type="text" class="form-control-sm form-control"  name="validation-url"
+																		placeholder="Enter no of buses">
+																	<div style="height: 13px" ></div>
+																	<input type="text" class="form-control-sm form-control" name="validation-url"
+																		placeholder="Enter no of buses">
+																	<div style="height: 13px" ></div>
+																	<input type="text" class="form-control-sm form-control" name="validation-url"
+																		placeholder="Enter no of buses">
+																</div>
+															</div>																
+														</div>
+													</div>
+												</div>
+												<div class="col-md-12">
+													<div class="card">
+														<div class="card-header">
+															<input type="checkbox" class="form-check-input input-primary"
+																				id="customCheckdefh1">
+																			<h5><label class="custom-control-label"
+																				for="customCheckdefh1">Timebased Ads</label></h5>
+														</div>
+														<div class="card-body row">
+															 <div class="col-md-6">
+																<div class="form-group">
+																	<label class="form-label">Route</label>
+																	<div class="col-9">
+																		<div class="form-check" style="height: 55px;">
+																			<input type="checkbox" class="form-check-input input-primary"
+																				id="customCheckdefh1">
+																			<label class="custom-control-label"
+																				for="customCheckdefh1">Sajha Route 1</label>															
+																		</div>
+																		<div class="form-check" style="height: 45px">
+																			<input type="checkbox" class="form-check-input input-primary"
+																				id="customCheckdefh2">
+																			<label class="custom-control-label"
+																				for="customCheckdefh2">Ringroad Route</label>
+																		</div>
+																		<div class="form-check">
+																			<input type="checkbox" class="form-check-input input-primary"
+																				id="customCheckdefh4" disabled>
+																			<label class="custom-control-label"
+																				for="customCheckdefh4" disabled>Sajha Route 2</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-6">
+																<div class="form-group">
+																	<label class="form-label">Allocate No of buses</label>
+																	<input type="text" class="form-control-sm form-control"  name="validation-url"
+																		placeholder="Enter no of buses">
+																	<div style="height: 13px" ></div>
+																	<input type="text" class="form-control-sm form-control" name="validation-url"
+																		placeholder="Enter no of buses">
+																	<div style="height: 13px" ></div>
+																	<input type="text" class="form-control-sm form-control" name="validation-url"
+																		placeholder="Enter no of buses">
+																</div>
+															</div>																
+														</div>
+													</div>
+												</div>
 												</div>                                                                                 
                                             </div>
 											<button type="submit" class="btn btn-primary">Submit</button>
