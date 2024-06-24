@@ -37,6 +37,9 @@
 	<!-- vendor css -->
 	<link rel="stylesheet" href="assets/css/style.css">
 
+	<!-- select2 css -->
+    <link rel="stylesheet" href="assets/css/plugins/select2.min.css">
+
 	<!-- Bootstrap datetimepicker css -->
 	<link rel="stylesheet" href="assets/plugins/bootstrap-datetimepicker/css/bootstrap-datepicker3.min.css">
 
@@ -836,8 +839,21 @@
                                         <div class=" col-xl-12">
                                         <form id="validation-form123" action="#!">
                                             <div class="row">
+												
                                                <div class="col-md-6">
 													<div class="row">
+														<div class="col-md-12">
+															<div class="form-group">
+																<label class="form-label">Select Client</label>
+																<select class="form-control" name="validation-select">
+																	<option value>Select Client</option>
+																	<option value="pitons">Wai Wai</option>
+																		<option value="cams">Coke</option>
+																		<option value="nuts">Samsung</option>
+																		<option value="bolts">Khalti</option>                                                            
+																</select>
+															</div>
+														</div>     		
 														<div class="col-md-12">
 															<div class="form-group">
 																<label class="form-label">Name</label>
@@ -978,9 +994,9 @@
 																			<label class="form-check-label" for="customCheckinlh1"> 10 Min
 																			</label>
 																		</div><div class="form-check form-check-inline">
-																			<input class="form-check-input input-primary" type="radio"
+																			<input class="form-check-input input-primary" checked type="radio"
 																				name="group5" value="" id="customCheckinlh1">
-																			<label class="form-check-label" for="customCheckinlh1"> 15 Min
+																			<label class="form-check-label" for="customCheckinlh1" > 15 Min
 																			</label>
 																		</div>
 																		<div class="form-check form-check-inline">
@@ -1007,22 +1023,23 @@
 																	</div>
 																</div>                                                 
 															</div>														 
-														</div>														
+														</div>	
+																											
 													</div>																									
 												</div>
-												<div class="col-md-6">
-													<div class="form-group">
-														<label class="form-label">Select Client</label>
-														<select class="form-control" name="validation-select">
-															<option value>Select Client</option>
-															<option value="pitons">Wai Wai</option>
-																<option value="cams">Coke</option>
-																<option value="nuts">Samsung</option>
-																<option value="bolts">Khalti</option>                                                            
-														</select>
-													</div>
-												</div>     											                                                                
-                                            </div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<label class="col-form-label">Enter Tags</label>
+															<select class="js-example-tags col-sm-12" multiple="multiple">
+																<option value="AL">Alabama</option>
+																<option value="WY">Wyoming</option>
+																<option value="WY">Coming</option>
+																<option value="WY">Hanry Die</option>
+																<option value="WY">John Doe</option>
+															</select>
+														</div>
+													</div>  								                                                                
+                                            	</div>
 											<button type="submit" class="btn btn-primary">Submit</button>
 											<button class="btn btn-danger">Cancel</button>											
                                         </form>
@@ -1154,6 +1171,12 @@
 <!-- owl-carousel Js -->
 <script src="assets/plugins/owl-carousel/js/owl.carousel.min.js"></script>
 <script src="assets/js/pages/ac-slider.js"></script>
+
+<!-- select2 Js -->
+<script src="assets/js/plugins/select2.full.min.js"></script>
+<!-- form-select-custom Js -->
+<script src="assets/js/pages/form-select-custom.js"></script>
+
 
 
 <div class="footer-fab">
